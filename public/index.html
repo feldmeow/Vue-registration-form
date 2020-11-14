@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Форма регистрации</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/logo.png" alt="Image: Logotype 'Your health'" class="logo">
+    <div class="header-links">
+      <nav class="nav">
+        <ul class="navbar">
+          <li class="nav-link"><a href="v" class="link">О компании
+            </a>
+          </li>
+          <li class="nav-link"><a href="#" class="link">Услуги и цены
+            </a>
+          </li>
+          <li class="nav-link"><a href="#" class="link">Врачи
+            </a>
+          </li>
+          <li class="nav-link"><a href="#" class="link">Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <a href="../src/App.vue" class="sign-up">Войти</a>
+      </div>
+    </div>
+    <button class="m-menu-button">
+      <span class="button-line"></span>
+      <span class="button-line"></span>
+      <span class="button-line"></span>
+    </button>
+  </header>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <container class="container">
     <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+  </container>
+
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
